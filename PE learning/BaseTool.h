@@ -90,7 +90,6 @@ public:
 				fprintf(fp, "%c", _src[i]);
 				cnt++;
 			}
-
 		}
 	}
 public:
@@ -491,7 +490,7 @@ public:
 			_asm
 			{
 				mov eax, begin1
-				mov start, eax;
+				mov start, eax
 				mov eax, end1
 
 					mov end, eax
@@ -505,7 +504,7 @@ public:
 					sub edi, 5
 					mov addOfcurrent, edi;//assign current address.
 
-				push ebx;
+				push ebx
 				push eax
 					push esi
 					push edx
@@ -618,6 +617,7 @@ public:
 					end2 :
 				nop
 			}
+			//±‰¡øŒª÷√
 			DWORD codeAddSize = (16 + 16 + 16 + 16 + 16 + 12 + end - start);
 			int i = 0;
 			for (i = 0; i < sectionCnt-1; i++)
